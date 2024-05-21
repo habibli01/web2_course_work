@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Products</title>
+</head>
+<body>
+<h1>Products</h1>
+<div th:each="product : ${products}">
+    <p th:text="${product.name}">Product Name</p>
+    <!-- Add link/button for adding to cart -->
+</div>
+</body>
+</html>
